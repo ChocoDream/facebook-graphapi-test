@@ -3,7 +3,7 @@ import Navigation from './Components/Navigation'
 import SideTab from './Components/SideTab'
 import ListPost from './Components/ListPost'
 import ListPic from './Components/ListPic'
-import {Grid, makeStyles, List, ListItem} from '@material-ui/core'
+import { Grid, makeStyles, List, ListItem } from '@material-ui/core'
 
 const useStyle = makeStyles({
   root:{
@@ -31,7 +31,6 @@ function App() {
           </Grid>
         </Grid>
       </div>
-      
     </div>
   );
 }
