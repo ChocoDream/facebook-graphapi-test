@@ -1,7 +1,5 @@
-export const LogIn = () => {
-  FB.login(res => {
-    if (res.status) {
-      
-    }
+export const CheckLoginStatus = () => {
+  FB.getLoginStatus(res => {
+    statusChangeCallback(res);
   })
 }
