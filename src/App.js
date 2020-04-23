@@ -1,10 +1,9 @@
 import React from 'react';
-import Navigation from './components/Navigation'
-import SideTab from './components/SideTab'
-import ListPost from './components/ListPost'
-import ListPic from './components/ListPic'
+import Navigation from './Components/Navigation'
+import SideTab from './Components/SideTab'
+import ListPost from './Components/ListPost'
+import ListPic from './Components/ListPic'
 import {Grid, makeStyles, List, ListItem} from '@material-ui/core'
-
 
 const useStyle = makeStyles({
   root:{
