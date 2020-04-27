@@ -39,3 +39,10 @@ export const getUserGroupsLong = async (userId, longToken) => {
   result = await result.json()
   return result["data"];
 }
+
+export const postToGroup = async (message, pageId, groupToken) => {
+  let result = await fetch(`https://graph.facebook.com/${pageId}/feed
+  ?message=${message}&access_token=${groupToken}`, {
+    method: "POST"
+  })
+}
