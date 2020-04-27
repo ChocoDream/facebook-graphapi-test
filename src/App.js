@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Grid, makeStyles } from '@material-ui/core'
+
 import Navigation from './Components/Navigation'
 import SideTab from './Components/SideTab'
 import ListPost from './Components/ListPost'
 import ListPic from './Components/ListPic'
-import { Grid, makeStyles, List, ListItem } from '@material-ui/core'
+import FacebookInformation from './Components/FacebookInformation'
+
+import {FacebookUserProvider} from './Contexts/FacebookUserProvider'
 
 const useStyle = makeStyles({
   root:{
@@ -12,9 +16,12 @@ const useStyle = makeStyles({
 })
 
 function App() {
+
   const classes = useStyle()
   return (
     <div className="App">
+      <FacebookUserProvider>
+
       <Navigation/>
       <div className={classes.root}>
         <Grid container>
@@ -31,6 +38,10 @@ function App() {
           </Grid>
         </Grid>
       </div>
+        <p>Facebook stuff</p>
+        <FacebookInformation />
+
+      </FacebookUserProvider>
     </div>
   );
 }

@@ -59,8 +59,8 @@ export default function MenuAppBar() {
                 onClick={handleMenu}
                 color="inherit"
               >
-                <FacebookLoginButton />
               </IconButton>
+              <FacebookLoginButton />
               <Menu
                 id="menu-appbar"
                 anchorEl={anchorEl}
